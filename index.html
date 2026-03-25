@@ -1,1 +1,82 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>HashtagIT Corp</title>\n    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">\n    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>\n    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>\n    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>\n</head>\n<body class="bg-gray-100">\n    <div id="app" class="container mx-auto p-4">\n        <h1 class="text-4xl font-bold text-center text-blue-500">Welcome to HashtagIT Corp</h1>\n        <div class="mt-6 text-center">\n            <span class="text-lg">Explore the power of technology with us!</span>\n        </div>\n        <div class="mt-4 flex justify-center">\n            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">Get Started</button>\n        </div>\n        <div class="mt-8 flex justify-center space-x-4">\n            <i class="lucide lucide-home text-gray-600"></i>\n            <i class="lucide lucide-settings text-gray-600"></i>\n            <i class="lucide lucide-user text-gray-600"></i>\n        </div>\n    </div>\n    <script type="text/babel">\n        const App = () => {\n            return (\n                <div>\n                    <h2 class="text-2xl">We're here to help you!</h2>\n                    <p>Stay connected with our services.</p>\n                </div>\n            );\n        };\n        ReactDOM.render(<App />, document.getElementById('app'));\n    <\/script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HashtagIT Corp</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl">HashtagIT Corp</h1>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#staffing">Staffing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bg-cover bg-center h-screen mb-10" style="background-image: url('hero-image.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h2 class="text-white text-4xl font-bold">Welcome to HashtagIT</h2>
+        </div>
+    </header>
+    <section id="technology" class="px-4 py-10">
+        <h2 class="text-3xl font-bold mb-4">Technology Pillars</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 1</h3>
+                <p>Description of technology pillar 1.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 2</h3>
+                <p>Description of technology pillar 2.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 3</h3>
+                <p>Description of technology pillar 3.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 4</h3>
+                <p>Description of technology pillar 4.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 5</h3>
+                <p>Description of technology pillar 5.</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Pillar 6</h3>
+                <p>Description of technology pillar 6.</p>
+            </div>
+        </div>
+    </section>
+    <section id="stats" class="bg-gray-200 px-4 py-10">
+        <h2 class="text-3xl font-bold mb-4">Our Stats</h2>
+        <p>Statistics about the company's performance.</p>
+    </section>
+    <section id="contact" class="px-4 py-10">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="border p-2 w-full" required>
+            </div>
+            <div class="mb-4">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="border p-2 w-full" required>
+            </div>
+            <div class="mb-4">
+                <label for="message">Message</label>
+                <textarea id="message" class="border p-2 w-full" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white p-2">Send</button>
+        </form>
+    </section>
+    <footer class="bg-blue-600 p-4 text-white text-center">
+        <p>&copy; 2026 HashtagIT Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
